@@ -851,6 +851,9 @@ hr{
     padding-right: 24px;
 }
 
+
+
+
 @media (max-width: 768px) {
    
     .sidebar {
@@ -864,8 +867,17 @@ hr{
         z-index: 1000;
     }
 
+    .iconify {
+        color: white;
+        height: 30px;
+        width: 30px;
+        margin: 8px;
+    }
+
+
     .hamburger{
         display: block;
+        
     }
     .close-btn{
     display:flex;
@@ -938,11 +950,13 @@ hr{
     }
     .sidebar {
       width: 100%;
-      text-align: center;
+      text-align: start;
     }
-    .sidebar .btn {
-      width: 100%;
+
+    span .text{
+        font-size: 30px;
     }
+
     .main {
       width: 100%;
     }
@@ -1036,7 +1050,11 @@ hr{
     .icon-wrapper {
         display: block !important;
       }
+
+
   }
+
+
   
   @media (max-width: 576px) {
     .sidebar .btn {
@@ -1061,5 +1079,3 @@ hr{
     }
 
   }
-  
-
