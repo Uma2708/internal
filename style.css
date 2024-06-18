@@ -937,7 +937,7 @@ hr{
       flex-direction: column;
     }
     .sidebar {
-      width: 40%;
+      width: 100%;
       text-align: center;
     }
     .sidebar .btn {
@@ -980,7 +980,9 @@ hr{
         text-align: center; /* Center align nav items */
         margin-bottom: 10px; /* Add space between nav items */
     }
-    
+    .icon-wrapper {
+        display: block !important;
+      }
   }
   
   @media (max-width: 768px) {
@@ -1028,8 +1030,11 @@ hr{
         font-size: 1.2rem; /* Adjust icon size for smaller screens */
     }
     .nav h3 {
-        font-size: 1.2rem; /* Decrease font size for the title */
+        font-size: 1.5rem; /* Decrease font size for the title */
     }
+    .icon-wrapper {
+        display: block !important;
+      }
   }
   
   @media (max-width: 576px) {
@@ -1038,7 +1043,7 @@ hr{
       font-size: 0.9rem;
     }
     .icon-wrapper {
-      display: none;
+      display: block !important;
     }
     .main {
       padding: 0 10px;
@@ -1053,6 +1058,7 @@ hr{
     .nav-item .iconify {
         font-size: 1.2rem; /* Adjust icon size for smaller screens */
     }
+
   }
   
 
