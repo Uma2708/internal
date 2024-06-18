@@ -8,70 +8,88 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body >
-    <div class="container-fluid">
-    <div class="row h-100 ">
-        <div class="col-sm-2">
-            <div class="row text-center">        
-                <img src="logo.png" alt="logo" class="img-fluid mt-4 logo">
-              <div class="mt-4">
-                <span class="iconify" data-icon="bi:house-door" ></span> 
+    <div class="container-fluid d-flex">
+        <div class="hamburger">&#9776;</div>
+        <div class="sidebar">
+            <div class="text-center">
+                <img src="logo.png" alt="logo" class="img-fluid mt-3  logo">
+                <div class="close-btn">&times;</div>
+            </div>
+            <div class="mt-2 text-center">
+                <span class="iconify" data-icon="bi:house-door"></span>
                 <span class="iconify" data-icon="radix-icons:dashboard"></span>
-              </div>
             </div>
-            <!--Buttons start-->
-            <div class="mt-5" >
-              <a href="">
-                <button type="button" class="btn btn2 d-flex align-items-center justify-content-center"> <span class="iconify" data-icon="bi:grid-fill"></span>  <span class="text">Dashboard</span> </button>
-              </a>
-    
-    
-                <div class="dropdown mt-2">
-                <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
-                  <span class="iconify" data-icon="clarity:user-solid"></span> <span class="text" >Account Insight</span>
+        <!--Buttons start-->
+        <div class="mt-3">
+            <a href="#">
+                <button type="button" class="btn btn2 d-flex align-items-center justify-content-center"> <span
+                        class="iconify" data-icon="bi:grid-fill"></span> <span class="text">Dashboard</span>
                 </button>
-                <ul class="dropdown-menu dropdown-cards"  >
-                  <li><a class="dropdown-item" href="#">Wallet Summary</a></li>
-                  <li><a class="dropdown-item" href="#">Deposit</a></li>
-                  <li><a class="dropdown-item" href="withdrawal.html">Withdrawal</a></li>
-                  <li><a class="dropdown-item" href="internal.html">Transfer</a></li>
-                </ul>
-                </div>
+            </a>
     
     
-                <div class="dropdown mt-2">
-                <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
-                  <span class="iconify" data-icon="bx:bxs-building-house"></span>  <span class="text">Structure</span>
+            <div class="dropdown ">
+                <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center"
+                    data-bs-toggle="dropdown">
+                    <span class="iconify" data-icon="clarity:user-solid"></span> <span class="text">Account
+                        Insight</span>
                 </button>
                 <ul class="dropdown-menu dropdown-cards">
-                  <li><a class="dropdown-item" href="level.html">Level</a></li>
-                  <li><a class="dropdown-item" href="direct.html">Direct</a></li>
-                  <li><a class="dropdown-item" href="rank.html">Rank</a></li>
+                    <li><a class="dropdown-item" href="#">Wallet Summary</a></li>
+                    <li><a class="dropdown-item" href="deposit.html">Deposit</a></li>
+                    <li><a class="dropdown-item" href="withdrawal.html">Withdrawal</a></li>
+                    <li><a class="dropdown-item" href="transfer.html">Transfer</a></li>
                 </ul>
-                </div>
-    
-    
-              <div class="dropdown mt-2">
-                <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
-                  <span class="iconify" data-icon="mdi:wallet"></span>  <span class="text">Wallet</span>
-                </button>
-                <ul class="dropdown-menu dropdown-cards">
-                  <li><a class="dropdown-item" href="hashUnit.html">#Unit</a></li>
-                  <li><a class="dropdown-item" href="HokenBalance.html">Hoken</a></li>
-                </ul>
-              </div>
-              <a href="newsSection.html"><button type="button" class="btn mt-2 btn2 d-flex align-items-center justify-content-center" >  <span class="iconify" data-icon="bi:newspaper" ></span>     <span class="text"> News</span>  </button></a>
-              <a href="contactUs.html"> <button type="button" class="btn mt-2 btn2 d-flex align-items-center justify-content-center">  <span class="iconify" data-icon="fluent:question-circle-24-regular"></span>      <span class="text">Support</span>   </button></a>
-              <a href="followUs.html"> <button type="button" class="btn mt-2 btn2 d-flex align-items-center justify-content-center">  <span class="iconify" data-icon="mdi:share-variant"></span>     <span class="text">Social channel</span> </button>              </a>
-
             </div>
     
-            <!-- Buttons end-->
-          </div>
-        <div class="col-sm-10 main mt-3">
+    
+            <div class="dropdown ">
+                <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center"
+                    data-bs-toggle="dropdown">
+                    <span class="iconify" data-icon="bx:bxs-building-house"></span> <span
+                        class="text">Structure</span>
+                </button>
+                <ul class="dropdown-menu dropdown-cards">
+                    <li><a class="dropdown-item" href="level.html">Level</a></li>
+                    <li><a class="dropdown-item" href="direct.html">Direct</a></li>
+                    <li><a class="dropdown-item" href="rank.html">Rank</a></li>
+                </ul>
+            </div>
+    
+    
+            <div class="dropdown ">
+                <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center"
+                    data-bs-toggle="dropdown">
+                    <span class="iconify" data-icon="mdi:wallet"></span> <span class="text">Wallet</span>
+                </button>
+                <ul class="dropdown-menu dropdown-cards">
+                    <li><a class="dropdown-item" href="hashUnit.html">#Unit</a></li>
+                    <li><a class="dropdown-item" href="HokenBalance.html">Hoken</a></li>
+                </ul>
+            </div>
+            <a href="newsSection.html"><button type="button"
+                    class="btn btn2 d-flex align-items-center justify-content-center"> <span class="iconify"
+                        data-icon="bi:newspaper"></span> <span class="text"> News</span> </button></a>
+            <a href="contactUs.html"> <button type="button"
+                    class="btn btn2 d-flex align-items-center justify-content-center"> <span class="iconify"
+                        data-icon="fluent:question-circle-24-regular"></span> <span class="text">Support</span>
+                </button></a>
+            <a href="followUs.html"> <button type="button"
+                    class="btn btn2 d-flex align-items-center justify-content-center"> <span class="iconify"
+                        data-icon="mdi:share-variant"></span> <span class="text">Social channel</span> </button>
+            </a>
+    
+        </div>
+    
+        <!-- Buttons end-->
+    </div>
+        <div class="col main mt-2">
         <!-- Nav Start -->
         <!-- <div class="row align-items-center mt-2 p-4 pb-2">
           <div class="col-auto">
@@ -199,28 +217,26 @@
 
             </div>
 
-        <div class="table-card rounded mb-3 pb-2">
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col d-flex align-items-center">
-                    <h5 > No. Of Entries: </h5> 
-                    <button class="btn table-btn1" style="margin-left: 5px;"> 10 <span class="iconify " data-icon="mdi:chevron-down" data-inline="false"></span> </button>
+            <div class="table-card rounded mb-3 pb-2">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <h5>No. Of Entries:</h5>
+                        <button class="btn table-btn1 ms-2"> 10 <span class="iconify" data-icon="mdi:chevron-down" data-inline="false"></span> </button>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <button class="btn table-btn2 filter-btn"> <span class="iconify" data-icon="mdi:filter-outline" data-inline="false"></span> Filter </button>
+                    </div>
                 </div>
-
-                <div class="col" >
-                    <button class="btn table-btn2"> <span class="iconify"   data-icon="mdi:filter-outline" data-inline="false"></span>  Filter </button>
+            
+                <div class="row lcard1 d-flex justify-content-between">
+                    <div class="col"><span>S No.</span></div>
+                    <div class="col"><span>UserId</span></div>
+                    <div class="col"><span>Rank</span></div>
+                    <div class="col"><span>Status</span></div>
+                    <div class="col"><span>Level</span></div>
+                    <div class="col"><span>D.O.J</span></div>
                 </div>
-                
-            </div> 
-                
-                <div class="row lcard1" >
-                    <div class="col">S No.</div>
-                    <div class="col">UserId</div>
-                    <div class="col">Rank</div>
-                    <div class="col">Status</div>
-                    <div class="col">Level</div>
-                    <div class="col">D.O.J</div>
-                </div>
-                <div class="row lcards" >
+                <div class="row lcards">
                     <div class="col">1</div>
                     <div class="col">1</div>
                     <div class="col">2</div>
@@ -244,7 +260,7 @@
                     <div class="col">2</div>
                     <div class="col">2</div>
                 </div>
-                <div class="row lcards" >
+                <div class="row lcards">
                     <div class="col">2</div>
                     <div class="col">2</div>
                     <div class="col">4</div>
@@ -260,7 +276,7 @@
                     <div class="col">2</div>
                     <div class="col">2</div>
                 </div>
-                <div class="row  lcards">
+                <div class="row lcards">
                     <div class="col">2</div>
                     <div class="col">2</div>
                     <div class="col">4</div>
@@ -276,7 +292,7 @@
                     <div class="col">2</div>
                     <div class="col">2</div>
                 </div>
-                <div class="row lcards" >
+                <div class="row lcards">
                     <div class="col">2</div>
                     <div class="col">2</div>
                     <div class="col">4</div>
@@ -284,7 +300,7 @@
                     <div class="col">2</div>
                     <div class="col">2</div>
                 </div>
-                <div class="row lcards" >
+                <div class="row lcards">
                     <div class="col">2</div>
                     <div class="col">2</div>
                     <div class="col">4</div>
@@ -292,11 +308,11 @@
                     <div class="col">2</div>
                     <div class="col">2</div>
                 </div>
-        </div>
+            </div>
+            
         </div>
             </div>
 
-        </div>
         </div>
     <!-- card2 end -->
 </body>

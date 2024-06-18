@@ -8,70 +8,88 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <div class="container-fluid">
-    <div class="row h-100">
-      <div class="col-sm-2">
-        <div class="row text-center">        
-            <img src="logo.png" alt="logo" class="img-fluid mt-4 logo">
-          <div class="mt-4">
-            <span class="iconify" data-icon="bi:house-door" ></span> 
+    <div class="container-fluid d-flex">
+      <div class="hamburger">&#9776;</div>
+      <div class="sidebar">
+        <div class="text-center">
+            <img src="logo.png" alt="logo" class="img-fluid mt-3  logo">
+            <div class="close-btn">&times;</div>
+        </div>
+        <div class="mt-2 text-center">
+            <span class="iconify" data-icon="bi:house-door"></span>
             <span class="iconify" data-icon="radix-icons:dashboard"></span>
-          </div>
         </div>
-        <!--Buttons start-->
-        <div class="mt-5" >
-          <a href="">
-            <button type="button" class="btn btn2 d-flex align-items-center justify-content-center"> <span class="iconify" data-icon="bi:grid-fill"></span>  <span class="text">Dashboard</span> </button>
-          </a>
-
-
-            <div class="dropdown mt-2">
-            <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
-              <span class="iconify" data-icon="clarity:user-solid"></span> <span class="text" >Account Insight</span>
+    <!--Buttons start-->
+    <div class="mt-3">
+        <a href="#">
+            <button type="button" class="btn btn2 d-flex align-items-center justify-content-center"> <span
+                    class="iconify" data-icon="bi:grid-fill"></span> <span class="text">Dashboard</span>
             </button>
-            <ul class="dropdown-menu dropdown-cards"  >
-              <li><a class="dropdown-item" href="#">Wallet Summary</a></li>
-              <li><a class="dropdown-item" href="#">Deposit</a></li>
-              <li><a class="dropdown-item" href="withdrawal.html">Withdrawal</a></li>
-              <li><a class="dropdown-item" href="internal.html">Transfer</a></li>
-            </ul>
-            </div>
+        </a>
 
 
-            <div class="dropdown mt-2">
-            <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
-              <span class="iconify" data-icon="bx:bxs-building-house"></span>  <span class="text">Structure</span>
+        <div class="dropdown ">
+            <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center"
+                data-bs-toggle="dropdown">
+                <span class="iconify" data-icon="clarity:user-solid"></span> <span class="text">Account
+                    Insight</span>
             </button>
             <ul class="dropdown-menu dropdown-cards">
-              <li><a class="dropdown-item" href="level.html">Level</a></li>
-              <li><a class="dropdown-item" href="direct.html">Direct</a></li>
-              <li><a class="dropdown-item" href="rank.html">Rank</a></li>
+                <li><a class="dropdown-item" href="#">Wallet Summary</a></li>
+                <li><a class="dropdown-item" href="deposit.html">Deposit</a></li>
+                <li><a class="dropdown-item" href="withdrawal.html">Withdrawal</a></li>
+                <li><a class="dropdown-item" href="transfer.html">Transfer</a></li>
             </ul>
-            </div>
-
-
-          <div class="dropdown mt-2">
-            <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
-              <span class="iconify" data-icon="mdi:wallet"></span>  <span class="text">Wallet</span>
-            </button>
-            <ul class="dropdown-menu dropdown-cards">
-              <li><a class="dropdown-item" href="hashUnit.html">#Unit</a></li>
-              <li><a class="dropdown-item" href="HokenBalance.html">Hoken</a></li>
-            </ul>
-          </div>
-          <a href="newsSection.html"><button type="button" class="btn mt-2 btn2 d-flex align-items-center justify-content-center" >  <span class="iconify" data-icon="bi:newspaper" ></span>     <span class="text"> News</span>  </button></a>
-          <a href="contactUs.html"> <button type="button" class="btn mt-2 btn2 d-flex align-items-center justify-content-center">  <span class="iconify" data-icon="fluent:question-circle-24-regular"></span>      <span class="text">Support</span>   </button></a>
-          <a href="followUs.html"> <button type="button" class="btn mt-2 btn2 d-flex align-items-center justify-content-center">  <span class="iconify" data-icon="mdi:share-variant"></span>     <span class="text">Social channel</span> </button>              </a>
-
         </div>
 
-        <!-- Buttons end-->
-      </div>
-      <div class="col-sm-10 main mt-2">
+
+        <div class="dropdown ">
+            <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center"
+                data-bs-toggle="dropdown">
+                <span class="iconify" data-icon="bx:bxs-building-house"></span> <span
+                    class="text">Structure</span>
+            </button>
+            <ul class="dropdown-menu dropdown-cards">
+                <li><a class="dropdown-item" href="level.html">Level</a></li>
+                <li><a class="dropdown-item" href="direct.html">Direct</a></li>
+                <li><a class="dropdown-item" href="rank.html">Rank</a></li>
+            </ul>
+        </div>
+
+
+        <div class="dropdown ">
+            <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center"
+                data-bs-toggle="dropdown">
+                <span class="iconify" data-icon="mdi:wallet"></span> <span class="text">Wallet</span>
+            </button>
+            <ul class="dropdown-menu dropdown-cards">
+                <li><a class="dropdown-item" href="hashUnit.html">#Unit</a></li>
+                <li><a class="dropdown-item" href="HokenBalance.html">Hoken</a></li>
+            </ul>
+        </div>
+        <a href="newsSection.html"><button type="button"
+                class="btn btn2 d-flex align-items-center justify-content-center"> <span class="iconify"
+                    data-icon="bi:newspaper"></span> <span class="text"> News</span> </button></a>
+        <a href="contactUs.html"> <button type="button"
+                class="btn btn2 d-flex align-items-center justify-content-center"> <span class="iconify"
+                    data-icon="fluent:question-circle-24-regular"></span> <span class="text">Support</span>
+            </button></a>
+        <a href="followUs.html"> <button type="button"
+                class="btn btn2 d-flex align-items-center justify-content-center"> <span class="iconify"
+                    data-icon="mdi:share-variant"></span> <span class="text">Social channel</span> </button>
+        </a>
+
+    </div>
+
+    <!-- Buttons end-->
+</div>
+      <div class="col main mt-2">
         <!-- Nav Start -->
         <div class="container">
           <div class="row">
@@ -114,10 +132,9 @@
 
         <!--content -->
         <div class="container">
-            
-              <div class="row mx-2 p-1" >
-                <h3 style="padding-left: 48px;"> Follow Us</h3>
-                <div class="col-md-6 mb-4" style="padding-right: 24px; padding-left: 24px;">
+          <h3 class="p-2"> Follow Us</h3>
+              <div class="row mx-1 p-1" >
+                <div class="col-md-6 mb-4" >
                   <div class="p-3 text-white spcard md-card">
                     <div>
                       <span class="ri--instagram-fill"></span>
@@ -127,8 +144,8 @@
                     <img src="insta-logo.gif" width="100px" height="100px" alt="gold dollar coins" class="img-fluid">
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class=" p-3  text-white spcard md-card">
+                <div class="col-md-6 mb-4">
+                  <div class=" p-3 text-white spcard md-card">
                     <div>
                       <span class="basil--linkedin-outline"></span>                    
                       <h4>LinkedIn</h4>
@@ -140,7 +157,7 @@
             </div>
 
             <div class="row mx-2 p-1" >
-              <div class="col-md-6 mb-4" style="padding-right: 24px; padding-left: 24px;">
+              <div class="col-md-6 mb-4" >
                 <div class="p-3 text-white spcard md-card">
                   <div>
                     <span class="ic--round-facebook"></span>
@@ -162,7 +179,7 @@
               </div>
           </div>
           <div class="row mx-2 p-1" >
-            <div class="col-md-6 mb-4" style="padding-right: 24px; padding-left: 24px;">
+            <div class="col-md-6 mb-4" >
               <div class="p-3 text-white spcard md-card">
                 <div>
                   <span class="ri--twitter-x-line"></span>
@@ -187,8 +204,6 @@
 
       
             </div>
-
-        </div>
         </div>
     <!-- card2 end -->
 </body>

@@ -8,70 +8,88 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body >
-    <div class="container-fluid">
-    <div class="row h-100">
-      <div class="col-sm-2">
-        <div class="row text-center">        
-            <img src="logo.png" alt="logo" class="img-fluid mt-4 logo">
-          <div class="mt-4">
-            <span class="iconify" data-icon="bi:house-door" ></span> 
+    <div class="container-fluid d-flex">
+      <div class="hamburger">&#9776;</div>
+      <div class="sidebar">
+        <div class="text-center">
+            <img src="logo.png" alt="logo" class="img-fluid mt-3  logo">
+            <div class="close-btn">&times;</div>
+        </div>
+        <div class="mt-2 text-center">
+            <span class="iconify" data-icon="bi:house-door"></span>
             <span class="iconify" data-icon="radix-icons:dashboard"></span>
-          </div>
         </div>
-        <!--Buttons start-->
-        <div class="mt-5" >
-          <a href="">
-            <button type="button" class="btn btn2 d-flex align-items-center justify-content-center"> <span class="iconify" data-icon="bi:grid-fill"></span>  <span class="text">Dashboard</span> </button>
-          </a>
-
-
-            <div class="dropdown mt-2">
-            <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
-              <span class="iconify" data-icon="clarity:user-solid"></span> <span class="text" >Account Insight</span>
+    <!--Buttons start-->
+    <div class="mt-3">
+        <a href="#">
+            <button type="button" class="btn btn2 d-flex align-items-center justify-content-center"> <span
+                    class="iconify" data-icon="bi:grid-fill"></span> <span class="text">Dashboard</span>
             </button>
-            <ul class="dropdown-menu dropdown-cards"  >
-              <li><a class="dropdown-item" href="#">Wallet Summary</a></li>
-              <li><a class="dropdown-item" href="#">Deposit</a></li>
-              <li><a class="dropdown-item" href="withdrawal.html">Withdrawal</a></li>
-              <li><a class="dropdown-item" href="internal.html">Transfer</a></li>
-            </ul>
-            </div>
+        </a>
 
 
-            <div class="dropdown mt-2">
-            <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
-              <span class="iconify" data-icon="bx:bxs-building-house"></span>  <span class="text">Structure</span>
+        <div class="dropdown ">
+            <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center"
+                data-bs-toggle="dropdown">
+                <span class="iconify" data-icon="clarity:user-solid"></span> <span class="text">Account
+                    Insight</span>
             </button>
             <ul class="dropdown-menu dropdown-cards">
-              <li><a class="dropdown-item" href="level.html">Level</a></li>
-              <li><a class="dropdown-item" href="direct.html">Direct</a></li>
-              <li><a class="dropdown-item" href="rank.html">Rank</a></li>
+                <li><a class="dropdown-item" href="#">Wallet Summary</a></li>
+                <li><a class="dropdown-item" href="deposit.html">Deposit</a></li>
+                <li><a class="dropdown-item" href="withdrawal.html">Withdrawal</a></li>
+                <li><a class="dropdown-item" href="transfer.html">Transfer</a></li>
             </ul>
-            </div>
-
-
-          <div class="dropdown mt-2">
-            <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
-              <span class="iconify" data-icon="mdi:wallet"></span>  <span class="text">Wallet</span>
-            </button>
-            <ul class="dropdown-menu dropdown-cards">
-              <li><a class="dropdown-item" href="hashUnit.html">#Unit</a></li>
-              <li><a class="dropdown-item" href="HokenBalance.html">Hoken</a></li>
-            </ul>
-          </div>
-          <a href="newsSection.html"><button type="button" class="btn mt-2 btn2 d-flex align-items-center justify-content-center" >  <span class="iconify" data-icon="bi:newspaper" ></span>     <span class="text"> News</span>  </button></a>
-          <a href="contactUs.html"> <button type="button" class="btn mt-2 btn2 d-flex align-items-center justify-content-center">  <span class="iconify" data-icon="fluent:question-circle-24-regular"></span>      <span class="text">Support</span>   </button></a>
-          <a href="followUs.html"> <button type="button" class="btn mt-2 btn2 d-flex align-items-center justify-content-center">  <span class="iconify" data-icon="mdi:share-variant"></span>     <span class="text">Social channel</span> </button>              </a>
-
         </div>
 
-        <!-- Buttons end-->
-      </div>
-      <div class="col-sm-10 main mt-2">
+
+        <div class="dropdown ">
+            <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center"
+                data-bs-toggle="dropdown">
+                <span class="iconify" data-icon="bx:bxs-building-house"></span> <span
+                    class="text">Structure</span>
+            </button>
+            <ul class="dropdown-menu dropdown-cards">
+                <li><a class="dropdown-item" href="level.html">Level</a></li>
+                <li><a class="dropdown-item" href="direct.html">Direct</a></li>
+                <li><a class="dropdown-item" href="rank.html">Rank</a></li>
+            </ul>
+        </div>
+
+
+        <div class="dropdown ">
+            <button type="button" class="btn dropdown-toggle d-flex align-items-center justify-content-center"
+                data-bs-toggle="dropdown">
+                <span class="iconify" data-icon="mdi:wallet"></span> <span class="text">Wallet</span>
+            </button>
+            <ul class="dropdown-menu dropdown-cards">
+                <li><a class="dropdown-item" href="hashUnit.html">#Unit</a></li>
+                <li><a class="dropdown-item" href="HokenBalance.html">Hoken</a></li>
+            </ul>
+        </div>
+        <a href="newsSection.html"><button type="button"
+                class="btn btn2 d-flex align-items-center justify-content-center"> <span class="iconify"
+                    data-icon="bi:newspaper"></span> <span class="text"> News</span> </button></a>
+        <a href="contactUs.html"> <button type="button"
+                class="btn btn2 d-flex align-items-center justify-content-center"> <span class="iconify"
+                    data-icon="fluent:question-circle-24-regular"></span> <span class="text">Support</span>
+            </button></a>
+        <a href="followUs.html"> <button type="button"
+                class="btn btn2 d-flex align-items-center justify-content-center"> <span class="iconify"
+                    data-icon="mdi:share-variant"></span> <span class="text">Social channel</span> </button>
+        </a>
+
+    </div>
+
+    <!-- Buttons end-->
+</div>
+      <div class="col main mt-2">
         <!-- Nav Start -->
         <div class="container">
           <div class="row">
@@ -141,14 +159,14 @@
           
           <div class="row justify-content-center" style="padding-left: 20px; margin-top: 24px; padding-right: 20px;">
             <div class="col-md-6 p-2 " >
-              <div class="card " style=" width: 464px; height: 234px; background-color: rgba(255, 255, 255, 0.12);border-radius: 15px; padding-right: 48px;" >
+              <div class="card " style="  height: 234px; background-color: rgba(255, 255, 255, 0.12);border-radius: 15px; padding-right: 48px;" >
                 <div class="row">
                   <div class="col p-1">
                       <h3 class="pt-5 pb-0 px-3" style="color: #9C9C9C;">Hoken Balance</h3>
                       <h3 class="px-3 pt-2">$56,674</h3>
                   </div>
                   <div class="col-md-4 col p-5 pt-5 d-flex justify-content-center">
-                    <button class="btn" style="margin-top: 32px; display: flex; align-items: center; justify-content: center; height: 40px; background: linear-gradient(95deg, rgba(103, 246, 245, 0.53) 0%, #026F7A 116.06%), rgba(156, 156, 156, 0.99);">
+                    <button class="btn" style="position: absolute;margin-top: 32px; display: flex; align-items: center; justify-content: center; height: 40px; background: linear-gradient(95deg, rgba(103, 246, 245, 0.53) 0%, #026F7A 116.06%), rgba(156, 156, 156, 0.99);">
                         <span class="iconify" data-icon="mdi:arrow-up-bold"></span> Withdraw
                     </button>
                 </div>
@@ -162,14 +180,14 @@
             </div>
             </div>
             <div class="col-md-6 p-2">
-              <div class="card " style=" width: 464px; height: 234px; background-color: rgba(255, 255, 255, 0.12);border-radius: 15px; padding-right: 40px;" >
+              <div class="card " style=" height: 234px; background-color: rgba(255, 255, 255, 0.12);border-radius: 15px; padding-right: 40px;" >
                 <div class="row">
                   <div class="col p-1">
                       <h3 class="pt-5 pb-0 px-3" style="color: #9C9C9C;">Hoken Balance</h3>
                       <h3 class="px-3 pt-2">$56,674</h3>
                   </div>
                   <div class="col-md-4 col p-5 pt-5 d-flex justify-content-center">
-                    <button class="btn" style="margin-top: 32px; display: flex; align-items: center; justify-content: center; height: 40px; background: linear-gradient(95deg, rgba(103, 246, 245, 0.53) 0%, #026F7A 116.06%), rgba(156, 156, 156, 0.99);">
+                    <button class="btn" style="position: absolute;margin-top: 32px; display: flex; align-items: center; justify-content: center; height: 40px; background: linear-gradient(95deg, rgba(103, 246, 245, 0.53) 0%, #026F7A 116.06%), rgba(156, 156, 156, 0.99);">
                         <span class="iconify" data-icon="mdi:arrow-up-bold"></span> Transfer
                     </button>
                 </div>
@@ -186,16 +204,16 @@
         <div class="" style="padding-left: 25px; padding-right: 20px; padding-top: 20px; " >
             <div class="row ">
                 <div class="col-md-6">
-                  <div class="card " style=" width: 464px; height: 234px; background-color: rgba(255, 255, 255, 0.12);border-radius: 15px; padding-right: 40px;" >
+                  <div class="card" style=" height: 234px; background-color: rgba(255, 255, 255, 0.12);border-radius: 15px; padding-right: 40px;" >
                       <div class="row">
-                        <div class="col " style="padding-left: 40px; padding-top: 60px;">
+                        <div class="col" style="padding-left: 40px; padding-top: 60px;">
                           <p class="">Activate</p>
                           <h3 class="pb-2 pt-0">Loreum</h3>
                           <button class="btn d-flex align-items-center justify-content-center" style="padding-right: 2px; width: 128px; height: 30px; background: linear-gradient(95deg, rgba(103, 246, 245, 0.53) 0%, #026F7A 116.06%), rgba(156, 156, 156, 0.99); ">Activate Now</button>
                           
                         </div>
                         <div class="col-md-4 col pt-5">
-                          <svg xmlns="http://www.w3.org/2000/svg" height="140px" ; width="180px"; viewBox="0 0 225 225" fill="none">
+                          <svg xmlns="http://www.w3.org/2000/svg" height="140px" ; width="180px"; viewBox="0 0 225 225" fill="none" class="svg">
                               <path d="M180.656 65.4375C178.781 64.9688 176.813 66.0938 176.344 67.9688L174.75 73.9688C164.531 60.375 149.719 50.625 133.125 46.875C131.156 46.4063 129.375 47.625 128.906 49.5C128.438 51.375 129.656 53.25 131.531 53.7188C145.875 57 158.625 65.1563 167.813 76.5L163.594 75.375C161.719 74.9063 159.75 76.0313 159.281 77.9063C158.813 79.7813 159.938 81.75 161.813 82.2188L175.313 85.6875C175.313 85.6875 175.781 85.6875 176.063 85.7813C176.063 85.7813 176.063 85.7813 176.156 85.7813C176.719 85.7813 177.375 85.5938 177.938 85.3125L178.125 85.125C178.219 85.125 178.313 84.9375 178.406 84.9375C178.969 84.4688 179.344 83.9063 179.531 83.25L183 69.75C183.469 67.875 182.344 65.9063 180.469 65.4375H180.656ZM103.688 180.094C81 175.219 63.1875 158.813 56.0625 137.25L59.7188 139.781C61.3125 140.906 63.4688 140.531 64.5938 138.938C65.7188 137.344 65.3438 135.188 63.75 134.063L52.3125 126.094C51.5625 125.531 50.625 125.344 49.6875 125.531C48.75 125.719 48 126.188 47.4375 127.031L39.4688 138.469C38.3438 140.063 38.7188 142.219 40.3125 143.344C40.875 143.719 41.625 144 42.2813 144C43.4063 144 44.5313 143.438 45.1875 142.5L48.8438 137.25C56.1563 162.281 76.3125 181.406 102.188 187.031C102.469 187.031 102.656 187.031 102.938 187.031C104.531 187.031 106.031 185.906 106.406 184.219C106.781 182.344 105.563 180.469 103.688 180V180.094Z" fill="#FFF3F3" fill-opacity="0.99"/>
                               <path d="M171.75 121.781C162.937 126.563 150.375 130.406 145.406 131.813C142.594 132.656 140.625 135.188 140.625 138.188V145.125C140.625 158.25 148.313 170.344 160.219 175.875C162.375 176.906 164.719 177.375 167.062 177.375C169.406 177.375 171.75 176.906 173.906 175.875C185.812 170.344 193.5 158.25 193.5 145.125V138.094C193.5 135.563 192.375 133.219 190.406 131.719C188.156 129.938 183.844 126.563 180.469 123.094C178.125 120.75 174.562 120.188 171.656 121.781H171.75ZM186.469 138.094V145.125C186.469 155.531 180.375 165.094 170.906 169.5C168.469 170.625 165.656 170.625 163.219 169.5C153.75 165.094 147.656 155.531 147.656 145.125L147.281 138.563C152.531 137.063 165.656 133.031 175.5 128.063C179.156 131.813 183.75 135.469 186.094 137.25C186.375 137.438 186.469 137.719 186.469 138V138.094Z" fill="#FFF3F3" fill-opacity="0.99"/>
                               <path d="M188.812 111.563C182.438 105.188 173.062 101.906 163.125 102.375C146.25 103.406 133.031 117.844 133.031 135.188V194.906C133.031 197.906 135.469 200.25 138.375 200.25H195.844C198.844 200.25 201.187 197.813 201.187 194.906V135.563C201.187 123.938 196.219 114.375 188.812 111.469V111.563ZM194.156 193.406H187.594V181.219C187.594 179.25 186 177.656 184.031 177.656C182.062 177.656 180.469 179.25 180.469 181.219V193.406H139.875V135.281C139.875 121.594 150.188 110.25 163.406 109.406C171.563 108.938 179.156 111.656 184.125 117C184.5 117.469 185.062 117.75 185.625 117.938C189.656 119.25 194.063 125.344 194.063 135.656V193.313L194.156 193.406Z" fill="#FFF3F3" fill-opacity="0.99"/>
@@ -208,7 +226,7 @@
                   </div>
                 </div>
                 <div class="col-md-6" style="padding-left: 8px;">
-                  <div class="card " style=" width: 464px; height: 234px; background-color: rgba(255, 255, 255, 0.12);border-radius: 15px; padding-right: 40px;" >
+                  <div class="card " style=" height: 234px; background-color: rgba(255, 255, 255, 0.12);border-radius: 15px; padding-right: 40px;" >
                     <div class="row">
                         <div class="col " style="padding-left: 60px; padding-top: 60px;">
                           <p class="">Activate</p>
@@ -228,8 +246,6 @@
 
       
             </div>
-
-        </div>
         </div>
     <!-- card2 end -->
 
