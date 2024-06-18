@@ -1024,7 +1024,8 @@ hr{
         display: inline-block; /* Ensure profile image is visible */
         width: 25px; /* Adjust size as needed */
         height: 25px; /* Adjust size as needed */
-        margin-right: 5px; /* Add margin between profile image and icons */
+        margin-right: 5px;
+        margin-top: 6px; /* Add margin between profile image and icons */
     }
     .nav-item .iconify {
         font-size: 1.2rem; /* Adjust icon size for smaller screens */
