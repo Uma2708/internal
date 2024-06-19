@@ -850,8 +850,16 @@ hr{
 .pr-4{
     padding-right: 24px;
 }
+.hcard{
+    height: 234px;
+     background-color: rgba(255, 255, 255, 0.12);
+     border-radius: 15px; 
+     padding-right: 40px;
+}
 
-
+.wt-card{
+    padding-left: 20px; margin-top: 24px; padding-right: 20px;
+}
 
 
 @media (max-width: 768px) {
@@ -926,7 +934,37 @@ hr{
         width: 100%;
     }
 
+    .md-card{
+        display: block;
+    }
 
+    .hcard{
+        padding-right: 0px;
+        width: 100%;
+    }
+    .wt-card{
+        padding-left: 0px; margin-top: 24px; padding-right: 0px;
+    }
+    .container, .container-fluid{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    .rt-card{
+        padding-left: 20px; 
+        padding-right: 20px; 
+        margin-top: 24px; 
+        margin-left: 24px; 
+        margin-right: 24px; 
+        border: 0.25px solid grey; 
+        border-radius: 5px; 
+        height: 170px;
+    }
+
+    .rt-card span{
+        font-size: 5px;
+    }
 }
 
 /* css end for hamburger */
