@@ -812,6 +812,11 @@ text-transform: capitalize;
     border-radius: 5px; 
     height: 170px;
 }
+.md-card-alt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 hr{
@@ -911,6 +916,7 @@ hr{
     .svg{
         width: 100px;
         height: 100px;
+        position: absolute;
 
     }
     .blog-cards img{
@@ -934,9 +940,11 @@ hr{
         width: 100%;
     }
 
-    /* .md-card{
+    .md-card{
         display: block;
-    } */
+    }
+
+    
 
     .hcard{
         padding-right: 0px;
