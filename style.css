@@ -965,15 +965,16 @@ hr{
     .rt-card span{
         font-size: 5px;
     }
+
+    .table-card1{
+        margin-left: 44px;
+    margin-right: 44px;
+    margin-bottom: 16px;
+    padding: 8px;
+    padding-left:0px;
+    }
 }
 
-/* css end for hamburger */
-
-/* Ensure this CSS is either in your style.css file or within a <style> tag in the HTML file */
-
-/* Default Styles */
-
-/* Adjusting for smaller devices */
 @media (max-width: 1200px) {
     .leader-card {
       flex-direction: column;
