@@ -890,7 +890,7 @@ hr{
 
     .hamburger{
         display: block;
-        
+        padding-left: 150px;
     }
     .close-btn{
     display:flex;
